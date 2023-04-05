@@ -1,13 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class data_type : MonoBehaviour
 {
-   
-
 }
-[System.Serializable]
+[Serializable]
 public class lopHoc
 {
     public List<giangVien> teachers;
@@ -24,7 +23,7 @@ public enum Gender
     Male = 1,
     Female = 2,
 }
-[System.Serializable]
+[Serializable]
 public class giangVien
 {
     public int id;
@@ -43,7 +42,7 @@ public class giangVien
         set { gender = (int)value; }
     }
 }
-[System.Serializable]
+[Serializable]
 public class sinhVien
 {
     public int id;
@@ -57,3 +56,4 @@ public class sinhVien
         set { gender = (int)value; }
     }
 }
+

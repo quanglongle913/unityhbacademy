@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -46,9 +45,14 @@ public class readFile : MonoBehaviour
             //formatter.Serialize(dataStream, lopU22_2);
             lopU22_2 = (lopHoc)formatter.Deserialize(dataStream);
             dataStream.Close();
-            Debug.Log(lopU22_2.students[1]);
-            return ;
+            //Debug.Log(lopU22_2.students[0].sex + " aaa");
+
+        }
+        /*if (lopU22_2.students[0]!=null) {
+            //Debug.Log(lopU22_2.students[0].sex + " aaa");
+
         }else
-            return;
+            Debug.Log("null");*/
+
     }
 }
